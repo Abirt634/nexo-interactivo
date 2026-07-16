@@ -203,7 +203,7 @@ const MODULES = [
     desc: "Sintaxis y estructura de etiquetas en HTML y CSS.",
     color: "#4ADE80",
     icon: "PS",
-    introPdf: "assets/pdf/HTML y CSS_El Puente Sintáctico.pdf",
+    introPdf: "assets/pdf/HTML y CSS_ El Puente Sintáctico.pdf",
     videos: [
       {
         id: "ps-video-1",
