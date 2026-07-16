@@ -25,11 +25,11 @@ function renderActivityScreen(main){
   }
 }
 
-/* ---------- cuestionarios de varias preguntas ---------- */
+
 function renderQuizFlow(body, act, done){
   const total = act.questions.length;
 
-  // Si ya está completada, mostramos un resumen simple (no repetimos el cuestionario)
+ 
   if (done){
     body.innerHTML = `
       <div class="content-panel">
@@ -164,7 +164,7 @@ function attachExternalHandlers(act, done){
   document.getElementById("completeExternalBtn").addEventListener("click", ()=> completeActivity(act.id, act.points));
 }
 
-/* ---------- completar actividad y otorgar puntos ---------- */
+
 function completeActivity(activityId, earnedPoints){
   const { mod, act } = findActivity(state.currentModuleId, activityId);
   if (state.user.completed.includes(activityId)) return;
